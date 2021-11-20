@@ -14,17 +14,38 @@ export class ActivitiesService {
     id: 1,
     type: "sending",
     amount: "3,004.52",
-    receiver: "Martin Mitchel"
+    label: "To Martin Mitchel",
+    date: "Today"
   },
   {
     id: 2,
-    type: "visa",
+    type: "sending",
     amount: "1,023.19",
-    receiver: "Jane Klamberberg"
-  }];
+    label: " To Jane Klamberberg",
+    date: "Today"
+  },
+  {
+    id: 3,
+    type: "conversion",
+    amount: "1,456.00",
+    label: "EUR to USD",
+    date: "Today"
+  },
+  {
+    id: 4,
+    type: "Cafe & Restaurants",
+    amount: "5.99",
+    label: "Starbucks",
+    date: "Yesterday"
+  }
+];
 
 //return one activity according to the parameter id
-  getActivitiesById(id: number): Activities{
-    return this.activities.find((x)=>x.id==id) as Activities;
+  getActivitiesByDate(date: string): Activities[]{
+    return this.activities.filter((x)=>x.date==date) as Activities[];
+  }
+
+  getAllActivities(){
+    return this.activities;
   }
 }

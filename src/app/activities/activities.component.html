@@ -1,1 +1,22 @@
-<p>activities works!</p>
+<p>Today</p>
+<div *ngFor="let activity of todayActivities ">
+    <p>{{ activity.label}}</p>
+    <span *ngIf="activity.type=='sending'">Sent</span>
+    <span *ngIf="activity.type!='sending'">{{activity.type}}</span>
+    <p>
+      <span  *ngIf="activity.type=='conversion'" >+</span>
+      <span  *ngIf="activity.type!='conversion'" >-</span>
+      {{ activity.amount}}<em>USD</em>
+    </p>
+</div>
+<p>Yesterday</p>
+<div *ngFor="let activity of yestdayActivities ">
+    <p>{{ activity.label}}</p>
+    <span *ngIf="activity.type=='sending'">Sent</span>
+    <span *ngIf="activity.type!='sending'">{{activity.type}}</span>
+    <p>
+      <span  *ngIf="activity.type=='conversion'" >+</span>
+      <span  *ngIf="activity.type!='conversion'" >-</span>
+      {{ activity.amount}}<em>USD</em>
+    </p>
+</div>
