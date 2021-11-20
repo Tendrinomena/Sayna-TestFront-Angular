@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Card } from './model/card';
+import { Card } from '../model/card';
 
 @Injectable({
   providedIn: 'root'
@@ -7,7 +7,9 @@ import { Card } from './model/card';
 export class CardService {
 
   constructor() { }
-
+  /**
+   *  form all data about all existing cards
+   */
   cards : Card[] = [{
     id: 1,
     type: "master",
@@ -30,6 +32,7 @@ export class CardService {
     expire_date: "01/25"
   }];
 
+//get one card according to the parameter id
   getCardById(id: number): Card{
     return this.cards.find((card)=>card.id==id) as Card;
   }

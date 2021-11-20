@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { CardService } from './services/card.service';
 
 @Component({
   selector: 'app-root',
@@ -7,9 +6,6 @@ import { CardService } from './services/card.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'klamma';
-
   constructor(
-    private cardService: CardService
   ){}
 }
