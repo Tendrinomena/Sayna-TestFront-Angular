@@ -8,6 +8,7 @@ import { CardComponent } from './card/card.component';
 import { CardItemComponent } from './card/card-item/card-item.component';
 import { ActivitiesComponent } from './activities/activities.component';
 import { LimitComponent } from './limit/limit.component';
+import { PaymentComponent } from './payment/payment.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { LimitComponent } from './limit/limit.component';
     CardComponent,
     CardItemComponent,
     ActivitiesComponent,
-    LimitComponent
+    LimitComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,

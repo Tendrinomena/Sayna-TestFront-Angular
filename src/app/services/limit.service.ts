@@ -8,7 +8,7 @@ export class LimitService {
 
   constructor() { }
    /**
-   *  construct all data about recent activities
+   *  construct all data about limits
    */
     limits: Limit[]= [{
       id: 1,
