@@ -7,6 +7,7 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { CardComponent } from './card/card.component';
 import { CardItemComponent } from './card/card-item/card-item.component';
 import { ActivitiesComponent } from './activities/activities.component';
+import { LimitComponent } from './limit/limit.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { ActivitiesComponent } from './activities/activities.component';
     SidebarComponent,
     CardComponent,
     CardItemComponent,
-    ActivitiesComponent
+    ActivitiesComponent,
+    LimitComponent
   ],
   imports: [
     BrowserModule,
