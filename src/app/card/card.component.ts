@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CardService } from '../card.service';
+import { CardService } from '../services/card.service';
 import { Card } from '../model/card';
 
 @Component({
@@ -14,13 +14,7 @@ export class CardComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  getCard(rang: number): Card{
-    if(rang==1){
-      return this.cardService.getCard("master");
-    }else if(rang ==2){
-      return this.cardService.getCard("visa");
-    }else{
-      return this.cardService.getCard("corporate");
-    }
+  getCard(id: number): Card{
+      return this.cardService.getCardById(id);
   }
 }
