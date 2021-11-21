@@ -1,22 +1,29 @@
 <div class="activities">
-  <h3>Recent Activities</h3>
-  <button>View a report</button>
+  <div class="row">
+    <div class="col">
+      <h3>Recent Activities</h3>
+    </div>
+    <div class="col">
+      <button class="bouton">View a report</button>
+    </div>
+  </div>
+
 <main>
   <p>Today</p>
   <div *ngFor="let activity of todayActivities ">
 
-    <div class="container">
+    <div>
       <div class="row">
         <div class="col">
-          <p>{{ activity.label}}</p>
-          <span *ngIf="activity.type=='sending'">Sent</span>
-          <span *ngIf="activity.type!='sending'">{{activity.type}}</span>
+          <p><span class="icon-compass"  *ngIf="activity.type=='sending'"></span> {{ activity.label}}</p>
+          <span  class="light" *ngIf="activity.type=='sending'">Sent</span>
+          <span   class="light" *ngIf="activity.type!='sending'">{{activity.type}}</span>
         </div>
         <div class="col">
           <p>
-            <span  *ngIf="activity.type=='conversion'" >+</span>
-            <span  *ngIf="activity.type!='conversion'" >-</span>
-            {{ activity.amount}} <em> USD</em>
+            <span   class="light" *ngIf="activity.type=='conversion'" >+</span>
+            <span   class="light" *ngIf="activity.type!='conversion'" >-</span>
+            {{ activity.amount}} <strong> USD</strong>
           </p>
         </div>
       </div>
@@ -24,7 +31,7 @@
   </div>
   <p>Yesterday</p>
   <div *ngFor="let activity of yestdayActivities ">
-    <div class="container">
+    <div>
       <div class="row">
         <div class="col">
           <p>{{ activity.label}}</p>
@@ -35,7 +42,7 @@
           <p>
             <span  *ngIf="activity.type=='conversion'" >+</span>
             <span  *ngIf="activity.type!='conversion'" >-</span>
-            {{ activity.amount}}<em>USD</em>
+            {{ activity.amount}}<strong> USD</strong>
           </p>
         </div>
       </div>

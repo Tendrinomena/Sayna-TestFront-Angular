@@ -1,7 +1,25 @@
 .navbar-nav{
-  background-color: yellowgreen;
-  margin-left: -40px;
+  // background-color: yellowgreen;
+  margin-left: 0px;
 }
 a{
   color: black;
+  // font-style: none;
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: none;
+  color: black;
+}
+h1, .active{
+  color: #003063;
+}
+.active{
+  font-weight: bold;
+}
+.title {
+  margin-left: 20px;
+}
+.bas{
+  margin-top: 500px;
 }

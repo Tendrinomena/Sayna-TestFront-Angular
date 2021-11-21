@@ -8,7 +8,7 @@
 export interface Card{
   id: number,
   type: string,
-  amount: number,
+  amount: string,
   reference_id: string,
   expire_date: string
 }

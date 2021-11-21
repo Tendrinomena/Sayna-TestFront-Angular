@@ -1,6 +1,9 @@
 <div class="card-item">
   <span class="icon-cog"></span>
-  <h1>{{ card.amount }}</h1>
+  <h3>{{ card.amount }}
+    <span *ngIf="card.type=='master'"> <strong> USD</strong> </span>
+    <span *ngIf="card.type!='master'"> <strong> EUR</strong> </span>
+  </h3>
   <p>{{ card.reference_id}}</p>
   <p>{{ card.expire_date}}</p>
 </div>
