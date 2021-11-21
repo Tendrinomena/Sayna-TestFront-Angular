@@ -1,17 +1,17 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('../fonts/icomoon.eot?7p13dc');
-  src:  url('../fonts/icomoon.eot?7p13dc#iefix') format('embedded-opentype'),
-    url('../fonts/icomoon.ttf?7p13dc') format('truetype'),
-    url('../fonts/icomoon.woff?7p13dc') format('woff'),
-    url('../fonts/icomoon.svg?7p13dc#icomoon') format('svg');
+  src:  url('../fonts/icomoon.eot?vn27ee');
+  src:  url('../fonts/icomoon.eot?vn27ee#iefix') format('embedded-opentype'),
+    url('../fonts/icomoon.ttf?vn27ee') format('truetype'),
+    url('../fonts/icomoon.woff?vn27ee') format('woff'),
+    url('../fonts/icomoon.svg?vn27ee#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
 
 [class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
+  /* use !important to prevent issues with browser extensions that change ../fonts */
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -25,6 +25,57 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-lock:before {
+  content: "\e901";
+}
+.icon-account:before {
+  content: "\e902";
+}
+.icon-reports:before {
+  content: "\e903";
+}
+.icon-notif .path1:before {
+  content: "\e904";
+  color: rgb(29, 29, 27);
+}
+.icon-notif .path2:before {
+  content: "\e905";
+  margin-left: -0.8310546875em;
+  color: rgb(29, 29, 27);
+}
+.icon-notif .path3:before {
+  content: "\e906";
+  margin-left: -0.8310546875em;
+  color: rgb(228, 43, 27);
+}
+.icon-notif .path4:before {
+  content: "\e907";
+  margin-left: -0.8310546875em;
+  color: rgb(4, 5, 5);
+}
+.icon-overview .path1:before {
+  content: "\e908";
+  color: rgb(42, 50, 127);
+}
+.icon-overview .path2:before {
+  content: "\e909";
+  margin-left: -1.1484375em;
+  color: rgb(255, 255, 255);
+}
+.icon-overview .path3:before {
+  content: "\e90a";
+  margin-left: -1.1484375em;
+  color: rgb(255, 255, 255);
+}
+.icon-payment:before {
+  content: "\e900";
+}
+.icon-compass:before {
+  content: "\e949";
+}
 .icon-cog:before {
   content: "\e994";
+}
+.icon-plus:before {
+  content: "\ea0a";
 }
