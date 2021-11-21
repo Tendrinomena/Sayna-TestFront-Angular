@@ -1,6 +1,13 @@
 <h3>Int.Payments</h3>
 <span>The last 30 days</span>
-<div *ngFor="let p of allPayments">
-  <h3>{{p.number}}</h3>
-  <p>{{p.state}}</p>
+
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let p of allPayments">
+      <div>
+        <h3>{{p.number}}</h3>
+        <p>{{p.state}}</p>
+      </div>
+    </div>
+  </div>
 </div>

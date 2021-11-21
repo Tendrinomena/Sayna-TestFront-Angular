@@ -1,11 +1,20 @@
-<div>
-  <h3>Your Cards </h3>
-  <button>New card <span class="icon-plus"></span> </button>
+<div class="title">
+  <span class="card_title">Your Cards</span>  <button class="bouton">New card <span class="icon-plus"></span> </button>
   <span class="icon-notif"></span>
 </div>
-<div>
-  <app-card-item [card]="getCard(1)" ></app-card-item>
-  <app-card-item [card]="getCard(2)"></app-card-item>
-  <app-card-item [card]="getCard(3)"></app-card-item>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <app-card-item [card]="getCard(1)" ></app-card-item>
+    </div>
+    <div class="col">
+      <app-card-item [card]="getCard(2)"></app-card-item>
+    </div>
+    <div class="col">
+      <app-card-item [card]="getCard(3)"></app-card-item>
+    </div>
+  </div>
 </div>
+
 

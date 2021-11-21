@@ -1,4 +1,8 @@
-<div *ngFor="let limit of allLimits">
-  <h3>{{limit.type}} limit </h3>
-  <p> <em>{{limit.amount}}</em>/{{limit.usd_amount}} USD</p>
+<div class="container">
+  <div class="row">
+    <div class="col" *ngFor="let limit of allLimits">
+      <h3>{{limit.type}} limit </h3>
+      <p> <em>{{limit.amount}}</em>/{{limit.usd_amount}} USD</p>
+    </div>
+  </div>
 </div>

@@ -1,29 +1,46 @@
-<div>
+<div class="activities">
   <h3>Recent Activities</h3>
   <button>View a report</button>
-</div>
 <main>
   <p>Today</p>
   <div *ngFor="let activity of todayActivities ">
-      <p>{{ activity.label}}</p>
-      <span *ngIf="activity.type=='sending'">Sent</span>
-      <span *ngIf="activity.type!='sending'">{{activity.type}}</span>
-      <p>
-        <span  *ngIf="activity.type=='conversion'" >+</span>
-        <span  *ngIf="activity.type!='conversion'" >-</span>
-        {{ activity.amount}}<em>USD</em>
-      </p>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>{{ activity.label}}</p>
+          <span *ngIf="activity.type=='sending'">Sent</span>
+          <span *ngIf="activity.type!='sending'">{{activity.type}}</span>
+        </div>
+        <div class="col">
+          <p>
+            <span  *ngIf="activity.type=='conversion'" >+</span>
+            <span  *ngIf="activity.type!='conversion'" >-</span>
+            {{ activity.amount}} <em> USD</em>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
   <p>Yesterday</p>
   <div *ngFor="let activity of yestdayActivities ">
-      <p>{{ activity.label}}</p>
-      <span *ngIf="activity.type=='sending'">Sent</span>
-      <span *ngIf="activity.type!='sending'">{{activity.type}}</span>
-      <p>
-        <span  *ngIf="activity.type=='conversion'" >+</span>
-        <span  *ngIf="activity.type!='conversion'" >-</span>
-        {{ activity.amount}}<em>USD</em>
-      </p>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <p>{{ activity.label}}</p>
+          <span *ngIf="activity.type=='sending'">Sent</span>
+          <span *ngIf="activity.type!='sending'">{{activity.type}}</span>
+        </div>
+        <div class="col">
+          <p>
+            <span  *ngIf="activity.type=='conversion'" >+</span>
+            <span  *ngIf="activity.type!='conversion'" >-</span>
+            {{ activity.amount}}<em>USD</em>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 </main>
+</div>
 
